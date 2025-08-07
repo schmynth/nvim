@@ -23,12 +23,12 @@ This file is a guide to using nvim.
 
 Keybindings are in vim notation:  
 
-| vim style   |  translation |
-| ----------- |  ----------- |
-| `<C-t>`       |  Ctrl+t  |
-| K           |  Shift+k  |
-| <M-1>       |  Alt+1 |  
-| <leader>da  |  Space, then d, then a   |
+| vim style    |  translation   |
+| -----------  |  -----------   |
+| `<C-t>`      |  Ctrl+t        |
+| `K`          |  Shift+k       |
+| `<M-1>`      |  Alt+1         |  
+| `<leader>da` |  Space, then d, then a   |
 
 #### Language server
 
