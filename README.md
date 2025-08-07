@@ -34,6 +34,11 @@ Keybindings are in vim notation:
 | keybind | function |
 | - | - |
 || **general** |
+|`zR` | Open all folds |
+|`zM`| Close all folds|
+|`za`| Toggle fold under cursor|
+|`zc`| Close one fold|
+|`zo`| Open one fold|
 || **autocomplete** |
 |`<C-n>`| **n**ext autocomplete suggestion |
 |`<C-p>`| **p**revious autocomplete suggestion |
