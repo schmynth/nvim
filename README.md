@@ -39,6 +39,9 @@ Keybindings are in vim notation:
 |`<C-p>`| **p**revious autocomplete suggestion |
 || **diagnostics** |
 |`<leader>ca`| show **c**ode **a**ctions |
+|| **vimtree** |
+|`<C-t>`|open file in new **t**ab |
+
 
 ### useful commands
 
