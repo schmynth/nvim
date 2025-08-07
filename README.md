@@ -45,8 +45,11 @@ Keybindings are in vim notation:
 || **diagnostics** |
 |`<leader>ca`| show **c**ode **a**ctions |
 || **vimtree** |
+|`<A-e>`|open vimtree |
 |`<C-t>`|open file in new **t**ab |
 |`a` | **a**dd new file |
+|| **toggleterm** |
+|`<A-d>`|toggle terminal visibility|
 
 
 ### useful commands
