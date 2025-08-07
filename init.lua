@@ -10,6 +10,11 @@ vim.cmd("set shiftwidth=2")
 vim.opt.expandtab = true
 vim.opt.clipboard = "unnamedplus"
 
+-- folding: Enable Tree-sitter folding
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+vim.opt.foldenable = false -- don’t auto-fold by default
+
 -- show line numbers
 vim.cmd("set number")
 
