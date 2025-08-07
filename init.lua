@@ -25,22 +25,7 @@ toggleterm.setup_keymaps()
 local myHarpoon = require("sebastian.harpoon")
 myHarpoon.setup_keymaps()
 
-local builtin = require("telescope.builtin")
-
-
-
--- find files
-vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
-vim.keymap.set('n', '<space>fb', ':Telescope file_browser<CR>')
--- grep files
-vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
--- undotree
-vim.keymap.set('n', '<leader>u', ':UndotreeToggle<CR>', { desc = "Toggle Undotree" })
--- nvim-tree
-vim.keymap.set('n', '<C-h>', ':NvimTreeToggle<CR>', { desc = "Toggle Explorer SideBar" })
-
-vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, { noremap = true, silent = true, desc = "show code action" })
-
+require("sebastian.keymaps")
 
 local config = require("nvim-treesitter.configs")
 config.setup({
