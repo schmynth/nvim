@@ -1,6 +1,7 @@
 return {
   cmd = { "pylsp" }, -- Uses system-installed pylsp
   filetypes = { "py", "python" },
+  -- root_markers are needed for lsp to work
   root_markers = { '.git', 'venv', '.venv' },
   -- root_dir = function(fname)
   --   return require("lspconfig.util").find_git_ancestor(fname)

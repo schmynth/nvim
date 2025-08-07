@@ -42,3 +42,10 @@ To navigate through autocomplete options:
 
 Hover over a symbol with available diagnostics and press `K` to show.  
 `<leader>ca` shows code actions.
+
+| keybind | function |
+| - | - |
+| autocomplete | |
+|`<C-n>`| *n*ext autocomplete suggestion |
+|`<C-p>`| *p*revious autocomplete suggestion |
+
