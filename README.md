@@ -31,23 +31,18 @@ Keybindings are in vim notation:
 | `<leader>da` |  Space, then d, then a   |
 | `i<CR>`      |  i, then Enter ("Carriage Return") |
 
-#### Language server
-
-##### autocomplete
-
-To navigate through autocomplete options:  
-`<C-n>` for next, `<C-p>` for previous  
-
-##### diagnostics
-
-Hover over a symbol with available diagnostics and press `K` to show.  
-`<leader>ca` shows code actions.
 
 | keybind | function |
 | - | - |
+|| **general** |
 || **autocomplete** |
-|`<C-n>`| **_n_**ext autocomplete suggestion |
-|`<C-p>`| **_p_**revious autocomplete suggestion |
+|`<C-n>`| **n**ext autocomplete suggestion |
+|`<C-p>`| **p**revious autocomplete suggestion |
 || **diagnostics** |
 |`<leader>ca`| show **c**ode **a**ctions |
 
+### useful commands
+
+| command | purpose |
+| --- | --- |
+| ```:nmap <leader>ca``` | show mapping of `<leader>ca` |
