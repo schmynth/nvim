@@ -25,7 +25,7 @@ Keybindings are in vim notation:
 
 | vim style   |  translation |
 | ----------- |  ----------- |
-| <C-t>       |  Ctrl+t  |
+| `<C-t>`       |  Ctrl+t  |
 | K           |  Shift+k  |
 | <M-1>       |  Alt+1 |  
 | <leader>da  |  Space, then d, then a   |
