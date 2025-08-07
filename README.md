@@ -29,9 +29,16 @@ Keybindings are in vim notation:
 | `K`          |  Shift+k       |
 | `<M-1>`      |  Alt+1         |  
 | `<leader>da` |  Space, then d, then a   |
+| `i<CR>`      |  i, then Enter ("Carriage Return") |
 
 #### Language server
 
+##### autocomplete
+
+To navigate through autocomplete options:  
+`<C-n>` for next, `<C-p>` for previous  
+
 ##### diagnostics
 
-Hover over a symbol with available diagnostics and press K
+Hover over a symbol with available diagnostics and press `K` to show.  
+`<leader>ca` shows code actions.
