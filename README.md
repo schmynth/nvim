@@ -45,7 +45,9 @@ Hover over a symbol with available diagnostics and press `K` to show.
 
 | keybind | function |
 | - | - |
-|  | _*autocomplete*_ |
-|`<C-n>`| *n*ext autocomplete suggestion |
-|`<C-p>`| *p*revious autocomplete suggestion |
+|| **autocomplete** |
+|`<C-n>`| **n**ext autocomplete suggestion |
+|`<C-p>`| **p**revious autocomplete suggestion |
+|| **diagnostics** |
+|`<leader>ca`| show **c**ode **a**ctions |
 
