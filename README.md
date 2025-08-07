@@ -19,8 +19,6 @@ Plugins, themes, harpoon and toggleterm config files in ```lua/sebastian/```
 
 This file is a guide to using nvim.  
 
-### important keybindings
-
 Keybindings are in vim notation:  
 
 | vim style    |  translation   |
@@ -31,6 +29,7 @@ Keybindings are in vim notation:
 | `<leader>da` |  Space, then d, then a   |
 | `i<CR>`      |  i, then Enter ("Carriage Return") |
 
+### important keybindings
 
 | keybind | function |
 | - | - |
