@@ -41,6 +41,7 @@ Keybindings are in vim notation:
 |`<leader>ca`| show **c**ode **a**ctions |
 || **vimtree** |
 |`<C-t>`|open file in new **t**ab |
+|`a` | **a**dd new file |
 
 
 ### useful commands
