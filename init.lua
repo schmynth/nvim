@@ -1,5 +1,6 @@
 -- disable netrw at the very start of your init.lua
 -- for nvim-tree
+-- vim.g is for global vim settings
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
@@ -34,27 +35,27 @@ require("sebastian.keymaps")
 
 local config = require("nvim-treesitter.configs")
 config.setup({
-  ensure_installed = { "cpp", "lua", "python", "hyprlang", "css", "csv", "c", "bash" },
-  highlight = { enable = true },
-  indent = { enable = true },
+	ensure_installed = { "cpp", "lua", "python", "hyprlang", "css", "csv", "c", "bash" },
+	highlight = { enable = true },
+	indent = { enable = true },
 })
 
 require("catppuccin").setup()
-vim.cmd.colorscheme "catppuccin"
+vim.cmd.colorscheme("catppuccin")
 
-vim.lsp.enable({ 'clangd', 'lua_ls', 'pylsp' })
+vim.lsp.enable({ "clangd", "lua_ls", "pylsp" })
 
 require("nvim-tree").setup({
-  sort = {
-    sorter = "case_sensitive",
-  },
-  view = {
-    width = 30,
-  },
-  renderer = {
-    group_empty = true,
-  },
-  filters = {
-    dotfiles = true,
-  },
+	sort = {
+		sorter = "case_sensitive",
+	},
+	view = {
+		width = 30,
+	},
+	renderer = {
+		group_empty = true,
+	},
+	filters = {
+		dotfiles = true,
+	},
 })
