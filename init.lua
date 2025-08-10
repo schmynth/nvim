@@ -4,7 +4,7 @@
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
-vim.cmd("set expandtab")
+-- vim.cmd("set expandtab")
 vim.cmd("set tabstop=2")
 vim.cmd("set softtabstop=2")
 vim.cmd("set shiftwidth=2")
@@ -35,9 +35,9 @@ require("sebastian.keymaps")
 
 local config = require("nvim-treesitter.configs")
 config.setup({
-	ensure_installed = { "cpp", "lua", "python", "hyprlang", "css", "csv", "c", "bash" },
-	highlight = { enable = true },
-	indent = { enable = true },
+  ensure_installed = { "cpp", "lua", "python", "hyprlang", "css", "csv", "c", "bash" },
+  highlight = { enable = true },
+  indent = { enable = true },
 })
 
 require("catppuccin").setup()
@@ -46,16 +46,16 @@ vim.cmd.colorscheme("catppuccin")
 vim.lsp.enable({ "clangd", "lua_ls", "pylsp" })
 
 require("nvim-tree").setup({
-	sort = {
-		sorter = "case_sensitive",
-	},
-	view = {
-		width = 30,
-	},
-	renderer = {
-		group_empty = true,
-	},
-	filters = {
-		dotfiles = true,
-	},
+  sort = {
+    sorter = "case_sensitive",
+  },
+  view = {
+    width = 30,
+  },
+  renderer = {
+    group_empty = true,
+  },
+  filters = {
+    dotfiles = true,
+  },
 })
