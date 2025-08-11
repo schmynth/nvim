@@ -50,10 +50,13 @@ Keybindings are in vim notation:
 |`a` | **a**dd new file |
 || **toggleterm** |
 |`<A-d>`|toggle terminal visibility|
-
+|| **jumplist** |
+|`<C-O>`|go to older jump position in jumplist|
+|`<C-I>`|go to newer jump position in jumplist|
 
 ### useful commands
 
 | command | purpose |
 | --- | --- |
 | ```:nmap <leader>ca``` | show mapping of `<leader>ca` |
+| ```:jumps``` | show content of jumplist |
