@@ -51,7 +51,7 @@ vim.list_extend(plugins, {
           javascript = { "prettierd", "prettier", stop_after_first = true },
 
           cpp = { "clang_format" },
-          bash = { "beautysh" },
+          bash = { "shfmt" },
         },
         format_on_save = {
           timeout_ms = 500,

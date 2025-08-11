@@ -5,9 +5,6 @@ vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
 -- vim.cmd("set expandtab")
-vim.cmd("set tabstop=2")
-vim.cmd("set softtabstop=2")
-vim.cmd("set shiftwidth=2")
 vim.opt.expandtab = true
 vim.opt.clipboard = "unnamedplus"
 
@@ -15,6 +12,7 @@ vim.opt.clipboard = "unnamedplus"
 vim.opt.foldmethod = "expr"
 vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
 vim.opt.foldenable = false -- don’t auto-fold by default
+vim.wo.relativenumber = true
 
 -- show line numbers
 vim.cmd("set number")
@@ -43,7 +41,8 @@ config.setup({
 require("catppuccin").setup()
 vim.cmd.colorscheme("catppuccin")
 
-vim.lsp.enable({ "clangd", "lua_ls", "pylsp" })
+-- language servers need to be enabled here
+vim.lsp.enable({ "clangd", "lua_ls", "pylsp", "bashls" })
 
 require("nvim-tree").setup({
   sort = {

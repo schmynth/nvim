@@ -1,5 +1,6 @@
 local builtin = require("telescope.builtin")
 
+vim.keymap.set("i", "kj", "<ESC>")
 -- find files
 vim.keymap.set("n", "<leader>ff", builtin.find_files, {})
 -- file browser
