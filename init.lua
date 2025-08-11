@@ -3,6 +3,7 @@
 require("config.vim")
 require("config.lsp")
 require("sebastian.plugins")
+--
 -- require("sebastian.themes")
 local toggleterm = require("sebastian.toggleterm")
 toggleterm.setup_keymaps()

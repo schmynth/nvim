@@ -59,4 +59,12 @@ Keybindings are in vim notation:
 | command | purpose |
 | --- | --- |
 | ```:nmap <leader>ca``` | show mapping of `<leader>ca` |
-| ```:jumps``` | show content of jumplist |
+
+
+### new (for me) concepts to practice
+
+jump with relative line numbers
+change until end of word with `ce`  
+change entire line with `cc`  
+delete everything until an x occurs with `dfx`  
+

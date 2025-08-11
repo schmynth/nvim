@@ -17,6 +17,7 @@ local Terminal = require("toggleterm.terminal").Terminal
 -- This will be your bottom terminal
 local bottom_term = Terminal:new({
     direction = "horizontal",
+    start_in_insert = true,
     hidden = true,
     close_on_exit = false,
     on_open = function(term)
