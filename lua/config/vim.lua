@@ -2,10 +2,12 @@
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
+-- display settings
+vim.opt.showmode = false
+
 -- vim.cmd("set expandtab")
 vim.opt.expandtab = true
 vim.opt.clipboard = "unnamedplus"
-
 -- folding: Enable Tree-sitter folding
 vim.opt.foldmethod = "expr"
 vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
