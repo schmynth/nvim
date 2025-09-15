@@ -22,6 +22,18 @@ vim.list_extend(plugins, require("sebastian.themes"))
 -- installed plugins
 vim.list_extend(plugins, {
 
+    -- debug adapter protocol (DAP)
+    {
+        "mfussenegger/nvim-dap",
+        event = "VeryLazy",
+        dependencies = {
+            "rcarriga/nvim-dap-ui",
+            "nvim-neotest/nvim-nio",
+            "jay-babu/mason-nvim-dap.nvim",
+            "theHamsta/nvim-dap-virtual-text",
+        }
+    },
+
     -- remove background colors
     { "xiyaowong/transparent.nvim" },
 
