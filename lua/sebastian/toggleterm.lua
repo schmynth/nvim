@@ -52,8 +52,10 @@ function M.setup_keymaps()
         pattern = "python",
         callback = function()
             vim.keymap.set("n", "<F5>", function()
-                vim.cmd("w") -- save file first
-                vim.cmd("TermExec cmd='./.venv/bin/python %'")
+                vim.cmd("w")                      -- save file first
+                local file = vim.fn.expand("%:p") -- expand current file path
+                local cmd = "TermExec cmd='./.venv/bin/python " .. vim.fn.fnameescape(file) .. "'"
+                vim.cmd(cmd)
             end, { buffer = true, desc = "Run current Python file in ToggleTerm" })
         end,
     })
