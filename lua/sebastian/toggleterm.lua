@@ -45,6 +45,17 @@ end
 function M.setup_keymaps()
     vim.keymap.set({ "n", "t" }, "<A-d>", M.toggle, { desc = "Toggle bottom terminal" })
     vim.keymap.set("n", "<F5>", M.run_build, { desc = "Run buildAndLaunch.sh in terminal" })
+
+    -- python-specific mapping
+    vim.api.nvim_create_autocmd("FileType", {
+        pattern = "python",
+        callback = function()
+            vim.keymap.set("n", "<F5>", function()
+                vim.cmd("w") -- save file first
+                vim.cmd("TermExec cmd='./.venv/bin/python %'")
+            end, { buffer = true, desc = "Run current Python file in ToggleTerm" })
+        end,
+    })
 end
 
 return M
