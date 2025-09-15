@@ -47,6 +47,7 @@ function M.setup_keymaps()
     vim.keymap.set("n", "<F5>", M.run_build, { desc = "Run buildAndLaunch.sh in terminal" })
 
     -- python-specific mapping
+    -- this overrides the global F5 mapping above
     vim.api.nvim_create_autocmd("FileType", {
         pattern = "python",
         callback = function()
