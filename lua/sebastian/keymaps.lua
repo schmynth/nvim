@@ -15,5 +15,8 @@ vim.keymap.set("n", "<A-e>", ":NvimTreeToggle<CR>", { desc = "Toggle Explorer Si
 vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { noremap = true, silent = true, desc = "show code action" })
 -- go to definition
 vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "go to definition" })
+-- rename symbol gobally
+vim.keymap.set("n", "<leader>r", vim.lsp.buf.rename, { desc = "rename symbol" })
+
 
 -- keymaps for running files or projects with F5 are defined in sebastian/toggleterm.lua
