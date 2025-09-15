@@ -33,24 +33,24 @@ Keybindings are in vim notation:
 
 | keybind | function |
 | - | - |
-|| --- **general** --- |
+|| --- **GENERAL** --- |
 |`zR` | Open all folds |
 |`zM`| Close all folds|
 |`za`| Toggle fold under cursor|
 |`zc`| Close one fold|
 |`zo`| Open one fold|
-|| --- **autocomplete** --- |
+|| --- **AUTOCOMPLETE** --- |
 |`<C-n>`| **n**ext autocomplete suggestion |
 |`<C-p>`| **p**revious autocomplete suggestion |
-|| **diagnostics** |
+|| --- **DIAGNOSTICS**  ---|
 |`<leader>ca`| show **c**ode **a**ctions |
-|| **vimtree** |
+|| --- **VIMTREE** --- |
 |`<A-e>`|open vimtree |
 |`<C-t>`|open file in new **t**ab |
 |`a` | **a**dd new file |
-|| **toggleterm** |
+|| --- **TOGGLETERM** --- |
 |`<A-d>`|toggle terminal visibility|
-|| **jumplist** |
+|| --- **jumplist** --- |
 |`<C-O>`|go to older jump position in jumplist|
 |`<C-I>`|go to newer jump position in jumplist|
 
