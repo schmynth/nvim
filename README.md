@@ -34,6 +34,10 @@ Keybindings are in vim notation:
 | keybind | function |
 | - | - |
 || --- **GENERAL** --- |
+|`gc`| Comment up to movement|
+|`gck`| Comment this line and line below |
+|`gc5j`| Comment 5 lines down |
+|| --- **FOLDS** --- |
 |`zR` | Open all folds |
 |`zM`| Close all folds|
 |`za`| Toggle fold under cursor|
