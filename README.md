@@ -57,6 +57,8 @@ Keybindings are in vim notation:
 || --- **jumplist** --- |
 |`<C-O>`|go to older jump position in jumplist|
 |`<C-I>`|go to newer jump position in jumplist|
+|| **LSP** |
+|`grn`|rename symbol globally|
 
 ### useful commands
 
