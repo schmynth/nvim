@@ -24,7 +24,7 @@ require("catppuccin").setup()
 vim.cmd.colorscheme("catppuccin")
 
 -- language servers need to be enabled here
-vim.lsp.enable({ "clangd", "lua_ls", "pylsp", "bashls" })
+vim.lsp.enable({ "clangd", "lua_ls", "pylsp", "bashls", "rust_ls" })
 
 require("nvim-tree").setup({
     sort = {
