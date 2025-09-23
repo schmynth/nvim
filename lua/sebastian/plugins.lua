@@ -31,7 +31,7 @@ vim.list_extend(plugins, {
             "nvim-neotest/nvim-nio",
             "jay-babu/mason-nvim-dap.nvim",
             "theHamsta/nvim-dap-virtual-text",
-        }
+        },
     },
 
     -- remove background colors
@@ -39,10 +39,10 @@ vim.list_extend(plugins, {
 
     {
         "nvim-lualine/lualine.nvim",
-        dependencies = { 'nvim-tree/nvim-web-devicons' },
+        dependencies = { "nvim-tree/nvim-web-devicons" },
         config = function()
             require("config.lualine")
-        end
+        end,
     },
 
     {
@@ -81,6 +81,14 @@ vim.list_extend(plugins, {
         end,
     },
 
+    {
+        "neovim/nvim-lspconfig",
+        dependencies = {
+            "hrsh7th/nvim-cmp",
+            "hrsh7th/cmp-nvim-lsp",
+        },
+    },
+
     -- file browser popup
     {
         "nvim-telescope/telescope.nvim",
@@ -114,8 +122,15 @@ vim.list_extend(plugins, {
                 "clangd",
                 "clang_format",
                 "pyright",
+                "rust-analyzer",
             },
         },
+    },
+
+    {
+        "mrcjkb/rustaceanvim",
+        version = "^6", -- Recommended
+        lazy = false, -- This plugin is already lazy
     },
 
     {
@@ -127,7 +142,8 @@ vim.list_extend(plugins, {
                     "lua",
                     "python",
                     "cpp",
-                    "c", -- add any other languages you use
+                    "c",
+                    "rust", -- add any other languages you use
                 },
                 highlight = { enable = true },
                 indent = { enable = true },

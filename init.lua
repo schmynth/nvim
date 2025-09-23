@@ -15,7 +15,7 @@ require("sebastian.keymaps")
 
 local config = require("nvim-treesitter.configs")
 config.setup({
-    ensure_installed = { "cpp", "lua", "python", "hyprlang", "css", "csv", "c", "bash" },
+    ensure_installed = { "cpp", "lua", "python", "hyprlang", "css", "csv", "c", "bash", "rust" },
     highlight = { enable = true },
     indent = { enable = true },
 })
