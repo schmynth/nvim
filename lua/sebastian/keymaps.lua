@@ -21,6 +21,9 @@ vim.keymap.set("n", "<A-e>", ":NvimTreeToggle<CR>", { desc = "Toggle Explorer Si
 -- code_action
 vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { noremap = true, silent = true, desc = "show code action" })
 
+-- go to next error
+vim.keymap.set("n", "ge", ":lua vim.diagnostic.goto_next()<CR>", { desc = "[g]o to next [e]rror" })
+
 -- exit terminal mode with double ESC
 vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
 
