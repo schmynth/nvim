@@ -76,16 +76,16 @@ delete everything until an x occurs with `dfx`
 repeat last fx movement with `;` (forwards) `,` backwards  
 
 Add/delete/replace surroundings (brackets, quotes, etc.) with mini plugin:  
-`saiw)` - [S]urround [A]dd [I]nner [W]ord [)]Paren
-    `saiw(` fügt spaces zwischen Wort und Klammern hinzu  
+`saiw)` - [S]urround [A]dd [I]nner [W]ord [)]Parentheses  
+`saiw(` fügt spaces zwischen Wort und Klammern hinzu  
 `saiw)` tut das nicht  
-`sd'`   - [S]urround [D]elete [']quotes
-`sr)'`  - [S]urround [R]eplace [)] with [']
+`sd'`   - [S]urround [D]elete [']quotes  
+`sr)'`  - [S]urround [R]eplace [)] with [']  
 
 
 # lua
 
-[lua guide](https://learnxinyminutes.com/lua/).  
+To learn lua, refer to this [lua guide](https://learnxinyminutes.com/lua/).  
 To learn more about vim lua integration: `:help lua-guide` [(html version)](https://neovim.io/doc/user/lua-guide.html)
 
 
