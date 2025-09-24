@@ -82,6 +82,10 @@ Add/delete/replace surroundings (brackets, quotes, etc.) with mini plugin:
 `sd'`   - [S]urround [D]elete [']quotes  
 `sr)'`  - [S]urround [R]eplace [)] with [']  
 
+use `// clang-format off `  
+`...`  
+`//clang-format on`  to keep the block in between from getting autoformatted
+
 
 # lua
 
