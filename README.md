@@ -73,6 +73,7 @@ jump with relative line numbers
 change until end of word with `ce`  
 change entire line with `cc`  
 delete everything until an x occurs with `dfx`  
+repeat last fx movement with `;` (forwards) `,` backwards
 
 # lua
 
