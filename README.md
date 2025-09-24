@@ -74,6 +74,15 @@ change until end of word with `ce`
 change entire line with `cc`  
 delete everything until an x occurs with `dfx`  
 repeat last fx movement with `;` (forwards) `,` backwards
+"mini" plugin:
+    Add/delete/replace surroundings (brackets, quotes, etc.)  
+    
+    `saiw)` - [S]urround [A]dd [I]nner [W]ord [)]Paren
+        `saiw(` fügt spaces zwischen Wort und Klammern hinzu  
+    `saiw)` tut das nicht  
+    `sd'`   - [S]urround [D]elete [']quotes
+    `sr)'`  - [S]urround [R]eplace [)] with [']
+
 
 # lua
 
