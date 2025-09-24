@@ -18,6 +18,8 @@ local Terminal = require("toggleterm.terminal").Terminal
 local bottom_term = Terminal:new({
     direction = "horizontal",
     start_in_insert = true,
+    insert_mappings = false,
+    go_back = 0,
     hidden = true,
     close_on_exit = false,
     on_open = function(term)
@@ -52,7 +54,7 @@ function M.setup_keymaps()
         pattern = "python",
         callback = function()
             vim.keymap.set("n", "<F5>", function()
-                vim.cmd("w")                      -- save file first
+                vim.cmd("w")          -- save file first
                 local file = vim.fn.expand("%:p") -- expand current file path
                 local cmd = "TermExec cmd='./.venv/bin/python " .. vim.fn.fnameescape(file) .. "'"
                 vim.cmd(cmd)

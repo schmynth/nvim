@@ -74,3 +74,10 @@ change until end of word with `ce`
 change entire line with `cc`  
 delete everything until an x occurs with `dfx`  
 
+# lua
+
+[lua guide](https://learnxinyminutes.com/lua/).  
+To learn more about vim lua integration: `:help lua-guide` [(html version)](https://neovim.io/doc/user/lua-guide.html)
+
+
+
