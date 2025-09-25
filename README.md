@@ -9,9 +9,21 @@ This repository is my neovim config files. To use it:
 
 The main config file is ```init.lua```. This file imports secondary config files like includes.  
 These are:  
+
+### LSP
+
 Language server config files in: ```lsp/```  
 General lsp configuration in ```lua/config/lsp.lua```  
+
+### misc
+
 Plugins, themes, harpoon and toggleterm config files in ```lua/sebastian/```  
+
+### buffer specific configuration
+
+buffer specific configuration files live in `after/ftplugin`.  
+The file has to be named in reference to the buffer file type. To find that out, open a file and use  
+`:set ft`. Use that name and the `.lua` extension for the config file.
 
 
 
