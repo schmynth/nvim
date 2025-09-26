@@ -83,10 +83,7 @@ vim.list_extend(plugins, {
 
     {
         "neovim/nvim-lspconfig",
-        dependencies = {
-            "hrsh7th/nvim-cmp",
-            "hrsh7th/cmp-nvim-lsp",
-        },
+        dependencies = {},
     },
 
     { -- Autocompletion
@@ -232,31 +229,6 @@ vim.list_extend(plugins, {
         "neovim/nvim-lspconfig",
         config = function()
             require("lspconfig").clangd.setup({})
-        end,
-    },
-
-    {
-        "hrsh7th/nvim-cmp",
-        dependencies = {
-            "hrsh7th/cmp-nvim-lsp",
-            "neovim/nvim-lspconfig",
-        },
-        config = function()
-            local cmp = require("cmp")
-            cmp.setup({
-                sources = {
-                    { name = "nvim_lsp" },
-                },
-                mapping = cmp.mapping.preset.insert({
-                    ["<C-Space>"] = cmp.mapping.complete(),
-                    ["<CR>"] = cmp.mapping.confirm({ select = true }),
-                }),
-            })
-
-            local capabilities = require("cmp_nvim_lsp").default_capabilities()
-            require("lspconfig").clangd.setup({
-                capabilities = capabilities,
-            })
         end,
     },
 
