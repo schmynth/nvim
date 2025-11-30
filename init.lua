@@ -4,6 +4,9 @@ require("config.vim")
 require("config.lsp")
 require("sebastian.plugins")
 --
+
+vim.o.mouse = "a"
+
 -- require("sebastian.themes")
 local toggleterm = require("sebastian.toggleterm")
 toggleterm.setup_keymaps()
