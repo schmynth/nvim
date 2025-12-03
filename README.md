@@ -105,5 +105,14 @@ use `// clang-format off `
 To learn lua, refer to this [lua guide](https://learnxinyminutes.com/lua/).  
 To learn more about vim lua integration: `:help lua-guide` [(html version)](https://neovim.io/doc/user/lua-guide.html)
 
+## vim functions 
+
+```lua
+local theme_file = vim.fn.stdpath("config") .. "/.current_theme"
+```
+
+`vim.fn.functionName` runs a vim function from lua  
+`..` string concatenation in lua  
+That means, that the local variable `theme_file` contains the string "/home/$USER/.config/nvim/.current_theme".
 
 
