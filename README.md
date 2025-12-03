@@ -77,6 +77,7 @@ Keybindings are in vim notation:
 | command | purpose |
 | --- | --- |
 | ```:nmap <leader>ca``` | show mapping of `<leader>ca` |
+| ```:ToggleTerm 1``` | open ToggleTerm instance 1 (if you lost the one running a script etc.) |
 
 
 ### new (for me) concepts to practice
