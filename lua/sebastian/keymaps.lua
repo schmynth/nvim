@@ -58,3 +58,14 @@ vim.keymap.set(
 
 -- go to type definition
 vim.keymap.set("n", "gt", require("telescope.builtin").lsp_type_definitions, { desc = "[g]oto [t]ype definition" })
+
+-- copy diagnostic/error message
+vim.keymap.set("n", "<leader>ye", function()
+    local diag = vim.diagnostic.get(0, { lnum = vim.fn.line(".") - 1 })
+    if diag[1] then
+        vim.fn.setreg("+", diag[1].message)
+        vim.notify("📋 Diagnostic copied", vim.log.levels.INFO)
+    else
+        vim.notify("No diagnostic on this line", vim.log.levels.WARN)
+    end
+end, { desc = "Yank diagnostic under cursor" })

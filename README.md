@@ -60,6 +60,7 @@ Keybindings are in vim notation:
 |`<C-p>`| **p**revious autocomplete suggestion |
 || --- **DIAGNOSTICS**  ---|
 |`<leader>ca`| show **c**ode **a**ctions |
+|`<leader>ye`|  **y**ank **e**rror message |
 || --- **VIMTREE** --- |
 |`<A-e>`|open vimtree |
 |`<C-t>`|open file in new **t**ab |
