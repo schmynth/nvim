@@ -170,7 +170,7 @@ vim.list_extend(plugins, {
     -- file browser popup
     {
         "nvim-telescope/telescope.nvim",
-        tag = "0.1.5",
+        tag = "0.2.1",
         dependencies = { "nvim-lua/plenary.nvim" },
         config = function()
             require("telescope").setup({
